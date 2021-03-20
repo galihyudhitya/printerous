@@ -50,7 +50,8 @@ class OrganizationController extends Controller
             'phone' => $request->phone,
             'email' => $request->email,
             'website' => $request->website,
-            'logo' => $path
+            'logo' => $path,
+            'accountmanager_id' => $request->am
         ]);
         return redirect('/organization');
  
